@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+	<center>
+	<style type="text/css">
+
+		
+		table{width: 100%;}
+		table,th,td{border: 1px solid #00008B; border-collapse: collapse;}
+		th,td{padding: 8px;}
+		thead{background-color: #00008B; color: red;}
+
+		
+
+
+
+.dhinac-xejin{
+        float: left;
+	
+		margin-left: 20%;
+		padding: 1px;
+		border: 1px solid #eee;
+		border-radius:50px;
+	BORDER-COLOR:DEEPSKYBLUE;
+   }
+   .dhinac{
+        float: right;
+		margin-right:20%;
+		padding: 1px;
+		border: 1px solid #eee;
+		border-radius:50px;
+	BORDER-COLOR:DEEPSKYBLUE;
+   }
+   .hoos{
+
+
+	
+		margin-right: 0px;
+		margin-left: 40px;
+		padding: 10px;
+	 
+	
+	margin-top: 0px;
+	
+	
+
+
+   }
+
+	</style>
+</head>
+
+
+
+	
+<body>
+	
+		
+	<h3><p>Dukaanka deen diid ee albarako</p></h3>
+	<h3>Tell:615878379/618461818</h3>
+	<h3>albarako-mogadisho-somalia</h3>
+	<h3><p>Date___/____/_______INVOICE</p></h3>
+	
+	</div>
+
+	
+	
+	
+	
+	<h3>NAME___________phone____________</h3>
+
+
+</fieldset>
+<fieldset style="margin-left: 25%;margin-right: 25%;">
+	<table>
+	<thead>
+		<tr><th>No </th><th>magaca</th><th style=" color: red;background-color: #DCDCDC">QTY</th><th style=" color: red;background-color: #DCDCDC">QIIMO</th><th>Amount</th></tr>
+	</thead>
+	
+	<tbody>
+		
+		<tr><td>1</td><td contenteditable="true" ></td> <td contenteditable="true" class="qty"> </td> <td contenteditable="true" class="pr"></td> <td class="total"></td> </tr>
+		<tr><td >2</td><td contenteditable="true"><td contenteditable="true" class="qty"> </td> <td contenteditable="true" class="pr"></td> <td class="total"></td> </tr>
+		<tr><td>3</td><td contenteditable="true"></td ><td contenteditable="true" class="qty"> </td> <td contenteditable="true" class="pr"></td> <td class="total"></td> </tr>
+		<tr><td style="background-color: #DCDCDC">4</td><td contenteditable="true"></td ><td contenteditable="true" class="qty"> </td> <td contenteditable="true" class="pr"></td> <td class="total" ></td> </tr>
+		<tr><td style="background-color: #DCDCDC">5</td><td contenteditable="true"></td ><td contenteditable="true" class="qty"> </td> <td contenteditable="true" class="pr"></td> <td class="total"></td> </tr>
+		<tr><td>6</td><td contenteditable="true"></td ><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> </tr>
+		<tr><td>7</td><td contenteditable="true"></td ><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> </tr>
+		<tr><td>8</td><td contenteditable="true"></td ><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> </tr>
+		<tr><td style="background-color: #DCDCDC">9</td><td contenteditable="true"></td ><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> </tr>
+		<tr><td style="background-color: #DCDCDC">10</td><td contenteditable="true"></td><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> </tr>
+		<tr><td>11</td><td contenteditable="true"></td><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> </tr>
+		<tr><td>12</td><td contenteditable="true"></td ><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> </tr>
+		<tr><td style="background-color:#DCDCDC">13</td><td contenteditable="true"></td ><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> </tr>
+		<tr><td style="background-color: #DCDCDC">14</td><td contenteditable="true"></td ><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> </tr></tbody>
+		<tr><td>15</td><td contenteditable="true"></td ><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> </tr>
+		<tr><th rowspan="3" colspan="3">
+			<p style="float: left;">Customer Signs______________ </p> 
+			<p>Seles Mens's Sign ____________________</p>    
+			
+			<hr style="border :1px dashed red;">
+			<p>Alaab Mar La iibsaday Lama soo celin karo Mahadsanidiin</p></th>
+			
+		
+		<td> TOTOL</td><td id="bal"></td></tr>
+		<td > PAID</td><td contenteditable="true" id="pa"></td></tr>
+		<td > RESET</td><td contenteditable="true" id="res"></td></tr>
+	</tr>
+	
+</fieldset>
+</tbody>
+</table>
+<a href="assi1.html">Back</a>
+</center>
+
+</body>
+</html>
+<script type="text/javascript">
+	var qtys=document.getElementsByClassName("qty");
+	var pr=document.getElementsByClassName("pr");
+	var  total=document.getElementsByClassName("total");
+	var wadar=0;
+	var sub=document.getElementById("bal");
+	var paid=document.getElementById("pa");
+	var resto=document.getElementById("res");
+	var su=0;
+	for(var i=0; i<qtys.length; i++){
+		(function(index){
+			pr[index].addEventListener("blur",function(){
+				wadar=parseFloat(pr[index].innerHTML)*parseFloat(qtys[index].innerHTML);
+				total[index].innerHTML=wadar;
+				su+=parseFloat(total[index].innerHTML);
+				sub.innerHTML=su;
+			});
+		})(i);
+	}
+	paid.addEventListener("blur",function(){
+		var net=su-parseFloat(paid.innerHTML);
+		resto.innerHTML=net;
+	})
+</script>
